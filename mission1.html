@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love Ace Tennis Club</title>
+    <link rel="stylesheet" href="mission1.css" />
+</head>
+<body>
+    <!-- HEADER SECTION -->
+    <header> 
+        <h1 style="font-size: 50px">Love Ace Tennis Club</h1>
+        <h2 style="color:aliceblue; font-size: 30px;">Experience the Thrill of Tennis with Us!</h2>
+    </header>
+    <!-- NAV BAR SECTION -->
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About Us</a>
+        <a href="#">Membership</a>
+        <a href="#">Coaching</a>
+        <a href="#">Tournaments</a>    
+        <a href="#">Facilities</a>    
+        <a href="#">Contact Us</a> 
+    </nav>
+    <!-- MAIN CONTENTS -->
+    <main>
+        <section id="left">
+            <h1>Welcome to Love Ace Tennis Club,<br> Experience Tennis on All Surfaces!</h1>
+            <img src = "https://www.allabouttennis.co.uk/wp-content/uploads/2023/01/Untitled-design-2023-01-13T153548.551.jpg"alt="court surfaces" width="600" height="350">
+            <p>Join our vibrant community and enjoy our state-of-the-art facilities with clay, grass, hard, and carpet courts. Perfect for players of all levels, our club offers expert coaching, exciting tournaments, and engaging programs tailored to every age and ability.</p>
+            <button class="btn chat-btn">Click here to join us!</button>
+        </section>
+
+        <section id="right">
+            <h3>STAY UP TO DATE</h3>
+            <form action="mailto:seinalynv@missonreadyhq.com" method="post" enctype="text/plain">
+                <fieldset>
+                <legend>JOIN OUR MAILING LIST</legend>
+                <!-- ===FIRST INPUT FIELD=== -->
+                <label>Name:</label>
+                <input type="text" name="name" required style="background-color: rgb(86, 86, 237); color:white"/>
+                <br />
+
+                <!-- ===SECOND INPUT FIELD=== -->
+                <label>Email:</label>
+                <input type="email" name="email" style="background-color: rgb(86, 86, 237); color:white;"/>
+                <br />
+
+                <!-- ===RADIO BUTTONS=== -->
+                <label style="color: rgb(86, 86, 237); font-weight: 700;" id="subject-label">Subject:</label><br/>
+                <input type="radio" id="club" name="subject" value="club"><label for="club">Club Matters</label><br/>
+                <input type="radio" id="coaching" name="subject" value="coaching"><label for="coaching">Coaching Matters</label><br/>
+                <input type="radio" id="tournament" name="subject" value="tournament"><label for="tournament">Tournament Matters</label><br/>
+                
+                <!-- ===TEXTAREA -->
+                <label style="color: rgb(86, 86, 237); font-weight: 700;" id="Message">Message:</label> <br/>
+                <textarea></textarea>
+                <br/>
+
+                <!-- ===SUBMIT BUTTON=== -->
+                <input type="submit" value="Submit" />
+                </fieldset> 
+            </form>   
+        </section>
+    </main> 
+    
+    <!-- ====Footer Section==== -->
+    <footer>
+        <h3>Coded by Sein Villanueva 2024</h3>
+    </footer>
+</body>
+</html>

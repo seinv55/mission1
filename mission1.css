@@ -1,0 +1,128 @@
+* {
+    box-sizing: border-box; 
+}
+/* these properties apply to the entire html body element */
+body {
+    font-family:Tahoma;
+    margin:0;
+    /* color: rgb(86, 86, 237); */
+}
+/* header element properties */
+header {
+    text-align: center;
+    padding: 30px;
+    font-weight: bolder;
+    color: rgb(86, 86, 237);
+    background-image: url("https://assets.website-files.com/5d263ec8e7e0601f660665ef/5d263ec8e7e060223c066725_shutterstock_446187838.jpg");
+}
+/* nav element properties */
+nav {
+    display: flex;
+    background-color: rgb(86, 86, 237);
+    /* float: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+}
+/* to select a within nav */
+nav > a {
+    color:white;
+    /* to get rid of underline */
+    text-decoration: none;
+    padding: 14px 20px;
+    text-align: center;
+}
+/* make a hover for the a links */
+nav a:hover {
+    background-color: #dde;
+    /* the color when we hover */
+    color: blue;
+}
+/* ==== MAIN SECTION ==== */
+/* turning main to flexbox */
+main {
+    display:flex;
+    flex-wrap: wrap;
+}
+#left {
+    /* width that you can use for flexbox */
+    flex-basis: 50%;
+    background-color: whitesmoke;
+    padding: 20px;
+}
+#left > img {
+    display: block;
+    margin: auto;
+}
+#left > h1 {
+    text-align: center;
+}
+.chat-btn {
+  display: block;
+  margin: 20px 30%;
+  padding: 14px 25px;
+  width: 200px;
+  font-family: inherit;
+  font-weight: 700;
+  border: none;
+  border-radius: 30px;
+  transition: all 200ms ease;
+  box-shadow: rgba(37, 39, 89, 0.08) 0px 8px 8px 0;
+}   
+.chat-btn {
+    display: block;
+    margin: auto;
+}
+.chat-btn:hover {
+  background-color: rgb(86, 86, 237);
+  color: white;
+  cursor: pointer;
+}
+#right {
+    /* width that you can use for flexbox */
+    /* use pesticide to see the difference */
+    flex-basis: 50%;
+    background-color: whitesmoke;
+    padding: 20px;
+}
+#right {
+    text-align: center;
+}
+footer{
+    padding: auto;
+    text-align: center;
+    background:rgb(86, 86, 237);
+    color: white;
+}
+fieldset {
+    padding: 5%;
+    font-size: 15px;
+}
+input[type="submit"] {
+  background-color: rgb(86, 86, 237);
+  color: white;
+  width: 30%;
+}
+textarea {
+  width: 300px;
+  height: 150px;
+}
+/*===== Media Queries ===== */
+/* you can insert other element if you want to use the same property */
+@media screen and (max-width: 768px) {
+    nav, main {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    nav {
+        font-size: 12px;
+    }
+
+    footer {
+        font-size: 12px;
+        padding: 10px;
+    }
+}
